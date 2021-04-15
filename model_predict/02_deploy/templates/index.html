@@ -1,0 +1,17 @@
+<html>
+	<body style="background-color:#C0C0C0;">
+	    <h3>Predicciones:</h3>
+	<div>
+	  <center><form action="/predict" method="POST">
+	  	<label for="edad">Edad:</label><br>
+	    <input type="number" step="1" id="edad" name="edad" required="required"><br>	    
+	    <label for="salario">Salario:</label><br>
+	    <input type="number" step="1000" id="salario" name="salario" required="required"><br>	   
+	    <br>
+	    <input type="submit" value="Submit">
+	  </form>
+	<h1> {{ prediction }}</h1>
+		</center>
+	</div>
+	</body>
+</html>
