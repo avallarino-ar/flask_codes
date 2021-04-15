@@ -1,0 +1,26 @@
+<html>
+	<body style="background-color:#C0C0C0;">
+	    <h3>Consultar productos:</h3>
+	<div>
+	  <center><form action="/consultar" method="POST">
+	  	<label for="articulo">articulo:</label><br>
+	    <input type="string" id="articulo" name="articulo" required="required"><br>	   
+	    <br>
+	    <input type="submit" value="Submit">
+	  </form>
+
+	<table>
+	{%- for row in items %}
+	  <tr>
+	  {%- for column in row %}
+	    <td>{{ column }}</td>
+	  {%- endfor %}
+	  </tr>
+	{%- endfor %}
+	</table>
+
+	</center>
+
+	</div>
+	</body>
+</html>
